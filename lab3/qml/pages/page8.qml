@@ -4,17 +4,20 @@ import Sailfish.Silica 1.0
 Page {
     Column {
         anchors.centerIn: parent
+
         Switch {
-            anchors.horizontalCenter: parent.horizontalCenter
             id: mute
-            icon.source: "image://theme/icon-m-speaker-mute?"
-                         + (checked ? Theme.highlightColor
-                                    : Theme.primaryColor)
+            anchors.horizontalCenter: parent.horizontalCenter
         }
+
         Label {
-            text: "The sound is " + (mute.checked ? "off" : "on")
+            text: mute.checked ? "Включен" : "Выключен"
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: mute.bottom
+            anchors.topMargin: 10
         }
     }
+
     Button {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
