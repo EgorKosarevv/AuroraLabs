@@ -12,17 +12,22 @@ Page {
     }
 
     ConfigurationGroup {
-            id: settings
-            path: "/apps/app_name/settings"
-            property var tf: "empty"
-            property bool sw: false
-        }
+        id: settings
+        path: "/apps/app_name/settings"
+        property string tf: ""
+        property bool sw: false
+    }
+
+    anchors.fill: parent
 
     Column {
         anchors.centerIn: parent
+
+
+
         TextField {
             width: 300
-            text: "Текст"
+            text: settings.tf
             onTextChanged: {
                 settings.tf = text
                 console.log(settings.tf)
@@ -31,8 +36,9 @@ Page {
 
         TextSwitch {
             text: checked ? qsTr("Active") : qsTr("Inactive")
-            description: qsTr("Switch with text label")
-            onCheckedChanged:  {
+            description: qsTr("Переключатель")
+            checked: settings.sw
+            onCheckedChanged: {
                 settings.sw = checked
                 console.log(settings.sw)
             }

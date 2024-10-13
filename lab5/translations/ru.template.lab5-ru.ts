@@ -4,9 +4,9 @@
 <context>
     <name>DefaultCoverPage</name>
     <message>
-        <location filename="../qml/cover/DefaultCoverPage.qml" line="10"/>
-        <source>Template</source>
-        <translation>Шаблон</translation>
+        <location filename="../qml/cover/DefaultCoverPage.qml" line="9"/>
+        <source>Application Template</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -82,7 +82,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Page6.qml" line="89"/>
+        <location filename="../qml/pages/Page6.qml" line="92"/>
         <source>Pages.qml</source>
         <translation type="unfinished"></translation>
     </message>
@@ -95,7 +95,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Page7.qml" line="41"/>
+        <location filename="../qml/pages/Page7.qml" line="45"/>
         <source>Pages.qml</source>
         <translation type="unfinished"></translation>
     </message>

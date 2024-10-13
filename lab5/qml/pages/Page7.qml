@@ -11,32 +11,46 @@ Page {
         title: qsTr("Задание 7")
     }
 
+
     ConfigurationValue {
         id: setting_1
-        key: "/sailfish/i18n/lc_timeformat24h"
-       // defaultValue: false
+        key: "/apps/app_name/setting_1"
+        defaultValue: "Menu Default"
     }
 
+    ConfigurationValue {
+        id: setting_2
+        key: "/apps/app_name/setting_2"
+        defaultValue: false
+    }
+
+    anchors.fill: parent
 
     Column {
         anchors.centerIn: parent
-        Button {
-            text: "Текст1"
-            onClicked: setting_1.value = 1
+
+
+        TextField {
+            width: 300
+            text: setting_1.value
+            onTextChanged: {
+                setting_1.value = text
+                console.log(setting_1.value)
+            }
         }
-        Button {
-            text: "Текст2"
-            onClicked: setting_1.value = 2
+
+
+        TextSwitch {
+            text: checked ? qsTr("Active") : qsTr("Inactive")
+            description: qsTr("Переключатель")
+            checked: setting_2.value
+            onCheckedChanged: {
+                setting_2.value = checked
+                console.log(setting_2.value)
+            }
         }
-        Button {
-            text: "Флаг"
-            onClicked: console.log(setting_1.value)
-        }
-//        Button {
-//            text: "24"
-//            onClicked: setting_1.value = 24
-//        }
     }
+
 
     Button {
         anchors.horizontalCenter: parent.horizontalCenter
