@@ -4,8 +4,8 @@
 <context>
     <name>DefaultCoverPage</name>
     <message>
-        <location filename="../qml/cover/DefaultCoverPage.qml" line="9"/>
-        <source>Application Template</source>
+        <location filename="../qml/cover/DefaultCoverPage.qml" line="10"/>
+        <source>Template</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -17,7 +17,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Page1.qml" line="95"/>
+        <location filename="../qml/pages/Page1.qml" line="97"/>
         <source>Pages.qml</source>
         <translation type="unfinished"></translation>
     </message>
@@ -30,7 +30,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Page2.qml" line="118"/>
+        <location filename="../qml/pages/Page2.qml" line="119"/>
         <source>Pages.qml</source>
         <translation type="unfinished"></translation>
     </message>
@@ -56,7 +56,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Page4.qml" line="97"/>
+        <location filename="../qml/pages/Page4.qml" line="100"/>
         <source>Pages.qml</source>
         <translation type="unfinished"></translation>
     </message>
@@ -69,7 +69,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Page5.qml" line="34"/>
+        <location filename="../qml/pages/Page5.qml" line="35"/>
         <source>Pages.qml</source>
         <translation type="unfinished"></translation>
     </message>
@@ -82,7 +82,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/Page6.qml" line="65"/>
+        <location filename="../qml/pages/Page6.qml" line="80"/>
         <source>Pages.qml</source>
         <translation type="unfinished"></translation>
     </message>

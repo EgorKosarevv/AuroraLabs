@@ -13,6 +13,7 @@ Page {
     Column {
         anchors.centerIn: parent
 
+
         MyButton {
             id: myButton;
             anchors.centerIn: parent.Center
@@ -22,7 +23,7 @@ Page {
                 text: "Текст!"
                 color: "white"
             }
-            setColor: "teal"
+            setColor: "red"
         }
 
     }

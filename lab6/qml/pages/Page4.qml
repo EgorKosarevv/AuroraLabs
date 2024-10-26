@@ -28,10 +28,13 @@ Page {
             color: "green"
         }
 
+
+
         Timer {
             interval: 150; running: true; repeat: true
             onTriggered: parent.delayCnt = (parent.delayCnt + 1) % 40
         }
+
 
         state: {
             if (delayCnt < 10){

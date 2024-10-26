@@ -19,6 +19,7 @@ Page {
             id: row
             property int count: 0
 
+
             MyCounter {
                 num: parseInt(row.count / 360000) // Часы
             }

@@ -4,13 +4,13 @@ import Sailfish.Silica 1.0
 CoverBackground {
     objectName: "defaultCover"
 
-    CoverPlaceholder {
-        objectName: "placeholder"
-        text: qsTr("Application Template")
+    CoverTemplate {
+        objectName: "applicationCover"
+        primaryText: "App"
+        secondaryText: qsTr("Template")
         icon {
-            source: Qt.resolvedUrl("../icons/ApplicationTemplate.svg")
+            source: Qt.resolvedUrl("../icons/laba7.svg")
             sourceSize { width: icon.width; height: icon.height }
         }
-        forceFit: true
     }
 }

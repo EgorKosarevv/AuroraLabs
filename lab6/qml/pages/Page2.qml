@@ -17,6 +17,7 @@ Page {
         property int circleWidth: 100
         property int delayCnt: 0
 
+
         Rectangle {
             id: redCircle
             width: 200
