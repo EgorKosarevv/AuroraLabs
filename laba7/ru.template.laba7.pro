@@ -1,21 +1,27 @@
 TARGET = ru.template.laba7
 
 CONFIG += \
-    auroraapp
+    sailfishapp
 
 PKGCONFIG += \
 
 SOURCES += \
+    src/counter.cpp \
     src/main.cpp \
+    src/stringlist.cpp
 
 HEADERS += \
+    src/counter.h \
+    src/stringlist.h
 
 DISTFILES += \
+    qml/pages/Page1.qml \
+    qml/pages/Page2.qml \
     rpm/ru.template.laba7.spec \
 
-AURORAAPP_ICONS = 86x86 108x108 128x128 172x172
+SAILFISHAPP_ICONS = 86x86 108x108 128x128 172x172
 
-CONFIG += auroraapp_i18n
+CONFIG += sailfishapp_i18n
 
 TRANSLATIONS += \
     translations/ru.template.laba7.ts \
